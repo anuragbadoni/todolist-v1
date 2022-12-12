@@ -22,7 +22,7 @@ const item2= new itemdb({
 });
 
 const item3= new itemdb({
-    task: "bath"
+    task: "bathing"
 });
 
 const defaultItems=[item1,item2,item3];
