@@ -28,10 +28,18 @@
 
         
 
-   <p><%=itemos[i]%></p>
+   <p><%=itemos[i].task%></p>
 
-<form  method="post" action="/minus">
-            <button type="submit" name="button"  class="minus" value="<%=itemos[i]%>" >-</button>
+
+
+<form  method="post" action="/minus" >
+
+
+    <!-- ver important input type = hidden to include more value -->
+<input type="hidden" name="kind" value="<%=kindOfDay%>" > </input>    
+
+
+            <button type="submit" name="button"  class="minus"   value="<%=itemos[i].task%>" >-</button>
         </form>
 
         
