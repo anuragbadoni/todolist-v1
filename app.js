@@ -5,6 +5,7 @@ const date = require(__dirname + "/date.js");
 ///////
 
 const mongoose = require("mongoose");// mongo
+mongoose.set('strictQuery', false);
 mongoose.connect("mongodb://localhost:27017/todolistDB");
 
 const listschema = new mongoose.Schema({//mongo
@@ -340,8 +341,8 @@ res.redirect("/"+req.body.kind);
 // res.redirect("/work");
 // });
 
+const port =process.env.PORT || 3000;
 
-
-app.listen(3000, function () {
-    console.log("server running ....");
+app.listen(port, function () {
+    console.log("server running ....on " + port);
 });
