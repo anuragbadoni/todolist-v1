@@ -6,7 +6,7 @@ const date = require(__dirname + "/date.js");
 
 const mongoose = require("mongoose");// mongo
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://anurag:Hesoyam.123@cluster0.9jqmkrm.mongodb.net/?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://anuragbadoni123:wuxnXl2Y1UAlHO9f@cluster0.hia6h5n.mongodb.net/?retryWrites=true&w=majority");
 
 const listschema = new mongoose.Schema({//mongo
     task: String
